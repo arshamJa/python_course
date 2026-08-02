@@ -1,0 +1,10 @@
+vector
+copy
+replace
+pointer
+zip
+buffer
+read
+bubble
+keyboard
+write
