@@ -8446,6 +8446,90 @@ Updated List: ['Purple', 'Black', 'Blue']
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6313458deb38a349">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Grocery-Shopping-List-Manager">Grocery Shopping List Manager<a class="anchor-link" href="#Grocery-Shopping-List-Manager">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e00f5aea9813bc8e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create an empty list to store grocery items</span>
+<span class="n">shopping_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--- 🛒 Grocery Shopping List ---"</span><span class="p">)</span>
+
+<span class="c1"># 1. Adding items to the list (append)</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Apples"</span><span class="p">)</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Milk"</span><span class="p">)</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Bread"</span><span class="p">)</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Eggs"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Added initial items!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Current List:"</span><span class="p">,</span> <span class="n">shopping_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Total Items:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">))</span>
+
+<span class="c1"># 2. Accessing items by position (indexing starts at 0)</span>
+<span class="n">first_item</span> <span class="o">=</span> <span class="n">shopping_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">First item to pick up: </span><span class="si">{</span><span class="n">first_item</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># 3. Removing an item once bought (remove)</span>
+<span class="n">bought_item</span> <span class="o">=</span> <span class="s2">"Milk"</span>
+<span class="n">shopping_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">bought_item</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Bought </span><span class="si">{</span><span class="n">bought_item</span><span class="si">}</span><span class="s2"> and removed it from the list."</span><span class="p">)</span>
+
+<span class="c1"># adding join method</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'- '</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">- '</span> <span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">))</span>
+
+<span class="c1"># 4. Printing the final list using a simple loop</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--- Remaining Items to Buy ---"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">shopping_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"- </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Items left to buy: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">shopping_list</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>--- 🛒 Grocery Shopping List ---
+Added initial items!
+Current List: ['Apples', 'Milk', 'Bread', 'Eggs']
+Total Items: 4
+
+First item to pick up: Apples
+
+Bought Milk and removed it from the list.
+
+--- Remaining Items to Buy ---
+- Apples
+- Bread
+- Eggs
+
+Items left to buy: 3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dfcdfbef-c1fa-42b5-ba86-1a819c813097">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8994,6 +9078,301 @@ London
 <li>دقیقاً یک آرگومان می‌گیرد و نمی‌تواند خالی باشد</li>
 </ul>
 </blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8c0e44a2b31dd35b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Student-Grade-Portal">Student Grade Portal<a class="anchor-link" href="#Student-Grade-Portal">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cc33eb7db560202f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Initialize nested dictionary with student data</span>
+<span class="n">portal</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"S101"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span>
+        <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"Math"</span><span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s2">"History"</span><span class="p">:</span> <span class="mi">92</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"S102"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Bob"</span><span class="p">,</span>
+        <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"Math"</span><span class="p">:</span> <span class="mi">72</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">:</span> <span class="mi">79</span><span class="p">,</span> <span class="s2">"History"</span><span class="p">:</span> <span class="mi">68</span><span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># 2. Add a new student directly into the dictionary</span>
+<span class="n">portal</span><span class="p">[</span><span class="s2">"S103"</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Charlie"</span><span class="p">,</span>
+    <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+
+<span class="c1"># 3. Add grades directly into Charlie's nested dictionary</span>
+<span class="n">portal</span><span class="p">[</span><span class="s2">"S103"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">][</span><span class="s2">"Math"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">85</span>
+<span class="n">portal</span><span class="p">[</span><span class="s2">"S103"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">][</span><span class="s2">"Science"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">90</span>
+
+<span class="c1"># ----------------------------------------------------</span>
+<span class="c1"># CALCULATIONS (Direct access using keys &amp; values)</span>
+<span class="c1"># ----------------------------------------------------</span>
+
+<span class="c1"># Alice's calculations</span>
+<span class="n">alice_scores</span> <span class="o">=</span> <span class="n">portal</span><span class="p">[</span><span class="s2">"S101"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="n">alice_avg</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">alice_scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">alice_scores</span><span class="p">)</span>
+
+<span class="c1"># Bob's calculations</span>
+<span class="n">bob_scores</span> <span class="o">=</span> <span class="n">portal</span><span class="p">[</span><span class="s2">"S102"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="n">bob_avg</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">bob_scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">bob_scores</span><span class="p">)</span>
+
+<span class="c1"># Charlie's calculations</span>
+<span class="n">charlie_scores</span> <span class="o">=</span> <span class="n">portal</span><span class="p">[</span><span class="s2">"S103"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="n">charlie_avg</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">charlie_scores</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">charlie_scores</span><span class="p">)</span>
+
+<span class="c1"># Store all averages in a single dictionary</span>
+<span class="n">summary</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">portal</span><span class="p">[</span><span class="s2">"S101"</span><span class="p">][</span><span class="s2">"name"</span><span class="p">]:</span> <span class="n">alice_avg</span><span class="p">,</span>
+    <span class="n">portal</span><span class="p">[</span><span class="s2">"S102"</span><span class="p">][</span><span class="s2">"name"</span><span class="p">]:</span> <span class="n">bob_avg</span><span class="p">,</span>
+    <span class="n">portal</span><span class="p">[</span><span class="s2">"S103"</span><span class="p">][</span><span class="s2">"name"</span><span class="p">]:</span> <span class="n">charlie_avg</span>
+<span class="p">}</span>
+
+<span class="c1"># Find top performing student directly from the summary dictionary</span>
+<span class="n">top_student</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">summary</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">summary</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+
+<span class="c1"># ----------------------------------------------------</span>
+<span class="c1"># DISPLAY OUTPUT (Direct printing)</span>
+<span class="c1"># ----------------------------------------------------</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"🎓 STUDENT GRADE PORTAL"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+
+<span class="c1"># Student 1: Alice</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"ID: S101 | Name: </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S101'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grades : </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S101'</span><span class="p">][</span><span class="s1">'grades'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">alice_avg</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Student 2: Bob</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"ID: S102 | Name: </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S102'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grades : </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S102'</span><span class="p">][</span><span class="s1">'grades'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">bob_avg</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Student 3: Charlie</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"ID: S103 | Name: </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S103'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Grades : </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S103'</span><span class="p">][</span><span class="s1">'grades'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average: </span><span class="si">{</span><span class="n">charlie_avg</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"📊 SUMMARY DICTIONARY"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"All Averages: </span><span class="si">{</span><span class="n">summary</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Top Student : </span><span class="si">{</span><span class="n">top_student</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">summary</span><span class="p">[</span><span class="n">top_student</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>========================================
+🎓 STUDENT GRADE PORTAL
+========================================
+ID: S101 | Name: Alice
+Grades : {'Math': 95, 'Science': 88, 'History': 92}
+Average: 91.67
+
+ID: S102 | Name: Bob
+Grades : {'Math': 72, 'Science': 79, 'History': 68}
+Average: 73.00
+
+ID: S103 | Name: Charlie
+Grades : {'Math': 85, 'Science': 90}
+Average: 87.50
+
+========================================
+📊 SUMMARY DICTIONARY
+========================================
+All Averages: {'Alice': 91.66666666666667, 'Bob': 73.0, 'Charlie': 87.5}
+Top Student : Alice (91.67)
+========================================
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=62a8ff4eef8e6387">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Same as above but using for loop</span>
+<span class="c1"># Main dictionary containing student records and their nested subject grades</span>
+<span class="n">portal</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"S101"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span>
+        <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"Math"</span><span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s2">"History"</span><span class="p">:</span> <span class="mi">92</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"S102"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Bob"</span><span class="p">,</span>
+        <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"Math"</span><span class="p">:</span> <span class="mi">72</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">:</span> <span class="mi">79</span><span class="p">,</span> <span class="s2">"History"</span><span class="p">:</span> <span class="mi">68</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"S103"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Charlie"</span><span class="p">,</span>
+        <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"Math"</span><span class="p">:</span> <span class="mi">85</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">:</span> <span class="mi">90</span><span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1"># 1. Add a new student directly into the top-level dictionary</span>
+<span class="n">portal</span><span class="p">[</span><span class="s2">"S104"</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Diana"</span><span class="p">,</span>
+    <span class="s2">"grades"</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Added new student: </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S104'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]</span><span class="si">}</span><span class="s2"> (ID: S104)"</span><span class="p">)</span>
+
+<span class="c1"># 2. Add grades directly to Diana's nested 'grades' dictionary</span>
+<span class="n">portal</span><span class="p">[</span><span class="s2">"S104"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">][</span><span class="s2">"Math"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">91</span>
+<span class="n">portal</span><span class="p">[</span><span class="s2">"S104"</span><span class="p">][</span><span class="s2">"grades"</span><span class="p">][</span><span class="s2">"Science"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">94</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Added grades for Diana: </span><span class="si">{</span><span class="n">portal</span><span class="p">[</span><span class="s1">'S104'</span><span class="p">][</span><span class="s1">'grades'</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Dictionary mapping letter grades to cutoffs</span>
+<span class="n">grade_cutoffs</span> <span class="o">=</span> <span class="p">{</span><span class="mi">90</span><span class="p">:</span> <span class="s2">"A"</span><span class="p">,</span> <span class="mi">80</span><span class="p">:</span> <span class="s2">"B"</span><span class="p">,</span> <span class="mi">70</span><span class="p">:</span> <span class="s2">"C"</span><span class="p">,</span> <span class="mi">60</span><span class="p">:</span> <span class="s2">"D"</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span> <span class="s2">"F"</span><span class="p">}</span>
+
+<span class="c1"># Dictionary to store calculated averages for class summary</span>
+<span class="n">class_averages</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"🎓 INDIVIDUAL STUDENT REPORT CARDS"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+
+<span class="c1"># 3. Iterate through the dictionary items (ID and student data)</span>
+<span class="k">for</span> <span class="n">student_id</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">portal</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Student: </span><span class="si">{</span><span class="n">data</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]</span><span class="si">}</span><span class="s2"> (ID: </span><span class="si">{</span><span class="n">student_id</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"----------------------------------------"</span><span class="p">)</span>
+
+    <span class="n">student_grades</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"grades"</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">student_grades</span><span class="p">:</span>
+        <span class="c1"># Calculate total score using dictionary values</span>
+        <span class="n">total_score</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">student_grades</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">subject_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">student_grades</span><span class="p">)</span>
+        <span class="n">avg</span> <span class="o">=</span> <span class="n">total_score</span> <span class="o">/</span> <span class="n">subject_count</span>
+
+        <span class="c1"># Save average to our summary dictionary</span>
+        <span class="n">class_averages</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">avg</span>
+
+        <span class="c1"># Print each subject and score</span>
+        <span class="k">for</span> <span class="n">subject</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">student_grades</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  - </span><span class="si">{</span><span class="n">subject</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+        <span class="c1"># Determine letter grade using comparison logic</span>
+        <span class="k">if</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+            <span class="n">letter</span> <span class="o">=</span> <span class="n">grade_cutoffs</span><span class="p">[</span><span class="mi">90</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+            <span class="n">letter</span> <span class="o">=</span> <span class="n">grade_cutoffs</span><span class="p">[</span><span class="mi">80</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+            <span class="n">letter</span> <span class="o">=</span> <span class="n">grade_cutoffs</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="n">avg</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+            <span class="n">letter</span> <span class="o">=</span> <span class="n">grade_cutoffs</span><span class="p">[</span><span class="mi">60</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">letter</span> <span class="o">=</span> <span class="n">grade_cutoffs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  Average    : </span><span class="si">{</span><span class="n">avg</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  Letter     : </span><span class="si">{</span><span class="n">letter</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"  No grades recorded."</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">========================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"📊 CLASS-WIDE SUMMARY"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+
+<span class="c1"># Iterate through the averages dictionary we populated</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">avg</span> <span class="ow">in</span> <span class="n">class_averages</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> | Average: </span><span class="si">{</span><span class="n">avg</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Find top performing student using dictionary keys and get() method</span>
+<span class="n">top_student</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">class_averages</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">class_averages</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"----------------------------------------"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Top Student : </span><span class="si">{</span><span class="n">top_student</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">class_averages</span><span class="p">[</span><span class="n">top_student</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Added new student: Diana (ID: S104)
+Added grades for Diana: {'Math': 91, 'Science': 94}
+
+========================================
+🎓 INDIVIDUAL STUDENT REPORT CARDS
+========================================
+
+Student: Alice (ID: S101)
+----------------------------------------
+  - Math      : 95
+  - Science   : 88
+  - History   : 92
+  Average    : 91.67
+  Letter     : A
+
+Student: Bob (ID: S102)
+----------------------------------------
+  - Math      : 72
+  - Science   : 79
+  - History   : 68
+  Average    : 73.00
+  Letter     : C
+
+Student: Charlie (ID: S103)
+----------------------------------------
+  - Math      : 85
+  - Science   : 90
+  Average    : 87.50
+  Letter     : B
+
+Student: Diana (ID: S104)
+----------------------------------------
+  - Math      : 91
+  - Science   : 94
+  Average    : 92.50
+  Letter     : A
+
+========================================
+📊 CLASS-WIDE SUMMARY
+========================================
+Alice      | Average: 91.67
+Bob        | Average: 73.00
+Charlie    | Average: 87.50
+Diana      | Average: 92.50
+----------------------------------------
+Top Student : Diana (92.50)
+========================================
+</pre>
+</div>
 </div>
 </div>
 </div>
